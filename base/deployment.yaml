@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: emp-backend
+  namespace: default
+
+spec:
+  replicas: 2
+  template:
+    spec:
+      containers:
+      - name: emp-manage
+        image: "emp-manage:latest"
+        ports:
+        - containerPort: 80
+        volumeMounts:
+        - name: secret-volume
+          mountPath: /usr/employee/default-config.ini  
+          subPath: config.ini
+          
+      imagePullSecrets:
+      - name: docker-registry-image-pull-secret
+
+      volumes:
+      - name: secret-volume
+        secret:
+          secretName: emp-secret

@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: emp-backend
+
+spec:
+  replicas: 2
+  template:
+    spec:
+      containers:
+      - name: emp-manage
+        image: "<your-docker-hub-account>/<docker-hub-repository>:<your-docker-image-tag>"
+        ports:
+        - containerPort: 5000 
+        volumeMounts:
+        - name: secret-volume
+          mountPath: /usr/employee/conf/config.ini
+          subPath: config.ini

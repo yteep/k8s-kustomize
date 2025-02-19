@@ -1,0 +1,19 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+- deployment.yaml
+- service.yaml
+
+labels:
+- includeSelectors: true
+  pairs:
+    app: emp
+    app.kubernetes.io/name: MyAppemp
+
+namePrefix: k8s-
+
+nameSuffix: -v1
+
+
+
