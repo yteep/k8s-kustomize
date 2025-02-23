@@ -1,6 +1,6 @@
 # 🌟 Kustomize Kubernetes Configurations 🚀
 
-Welcome to the **Kustomize Kubernetes Configurations** repository! This repo is designed to simplify the management and deployment of Kubernetes resources using Kustomize.
+Welcome to my **Kustomize Kubernetes Configurations** repository! This repo is designed to simplify the management and deployment of Kubernetes resources using Kustomize.
 ## 🚀 Features
 
 - **Base & Overlay Structure**: Manage shared resources and environment-specific configurations seamlessly.
