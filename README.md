@@ -25,3 +25,6 @@ k8s-kustomize/
     └── dev/
         ├── deployment-patch.yaml  # Dev-specific patch for the deployment
         └── kustomization.yaml     # Dev-specific Kustomize file
+
+## 📬 Contact
+For queries, reach out to: https://medium.com/@yashashtp 
