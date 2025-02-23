@@ -14,7 +14,7 @@ Here’s how the repository is structured:
 ```plaintext
 k8s-kustomize/
 │── apps/
-│   └── kustomization.yaml          # Application-level common configurations
+│   └── kustomization.yaml         # Application-level common configurations
 │
 ├── base/
 │   ├── deployment.yaml            # Base deployment configuration
